@@ -1,11 +1,14 @@
 package com.example.foodapp.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -33,6 +36,15 @@ private ScrollView scrollView;
         initView();
         initList();
         calculateCard();
+
+        ConstraintLayout topurchase = findViewById(R.id.topurchasebtn);
+        topurchase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CartActivity.this, PurchaseAcitivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

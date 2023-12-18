@@ -19,7 +19,13 @@
             android:name=".Activity.LogInActivity"
             android:exported="false" />
         <activity
+            android:name=".Activity.SuccessActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.CartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.PurchaseAcitivity"
             android:exported="true" />
         <activity
             android:name=".Activity.SecondActivity"

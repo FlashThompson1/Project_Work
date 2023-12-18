@@ -61,10 +61,13 @@ class SecondActivity : AppCompatActivity() {
         recyclerViewPopularList.layoutManager = linearLayoutManager
 
         val foodlist = ArrayList<FoodDomain>()
-        foodlist.add(FoodDomain("Pepperoni pizza","pizza1","slices pepperoni, mozzarella cheese, fresh oregano, ground black pepper, pizza sauce", 13.0,5,20,1000))
-        foodlist.add(FoodDomain("Cheese Burger","burger1","beef, Gouda Cheese, Special sauce, Lettuce, tomato", 16.0,4,15,1500))
-        foodlist.add(FoodDomain("Vegetable pizza","cat_1","olive oil, Vegetable oil, pitted Kalamata, cherry tomatoes, fresh oregano, basil", 11.0,3,18,800))
-         adapter2= RecommendedAdapter(foodlist)
+        foodlist.add(FoodDomain("Pepperoni pizza","pizza1","slices pepperoni, mozzarella cheese, fresh oregano, ground black pepper, pizza sauce", 16.0,5,20,1000))
+        foodlist.add(FoodDomain("Cheese Burger","burger1","beef, Gouda Cheese, Special sauce, Lettuce, tomato", 12.0,4,15,1500))
+        foodlist.add(FoodDomain("Black Burger","blackburger","beef, Cheddar Cheese, Special sauce, Salted Cucumbers, Lettuce, tomato", 13.0,5,16,1600))
+        foodlist.add(FoodDomain("Vegetable pizza","cat_1","olive oil, Vegetable oil, pitted Kalamata, cherry tomatoes, fresh oregano, basil", 15.0,3,18,800))
+        foodlist.add(FoodDomain("Sandwich","sandwich","fried bread,  Cheddar cheese, cherry tomatoes, lettuce leaf", 8.0,4,13,500))
+        foodlist.add(FoodDomain("Hot-Dog","cat_3","Sausages for hot dogs,  Hot dog buns, Mustard, Ketchup,Mayonnaise", 5.0,3,10,900))
+        adapter2= RecommendedAdapter(foodlist)
         recyclerViewPopularList.adapter = adapter2
     }
 
